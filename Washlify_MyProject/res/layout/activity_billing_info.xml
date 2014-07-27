@@ -1,0 +1,246 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BillingInfoActivity" 
+    android:background="@drawable/custom_grey_bg">
+
+    <RelativeLayout
+	        android:id="@+id/activity_billinginfo_top_bar"
+	        android:layout_width="match_parent"
+	        android:layout_height="45dp"
+	        android:layout_alignParentTop="true"
+	        android:layout_centerHorizontal="true" 
+	        android:background="@drawable/top_bar_bg">
+	
+	        <Button
+	            android:id="@+id/activity_billinginfo_btn_back"
+	            style="?android:attr/buttonStyleSmall"
+	            android:layout_width="30dp"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentLeft="true"
+	            android:layout_centerVertical="true"
+	            android:layout_margin="7dp"
+	            android:background="@drawable/arrow_back" />
+	
+	        <TextView
+		        android:id="@+id/activity_billinginfo_title"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerInParent="true"
+		        android:text="Billing Info"
+		        android:textAlignment="center"
+		        android:textColor="#ffffff"
+		        android:textSize="22dp"/>
+		        
+	</RelativeLayout>
+	
+    <ScrollView
+        android:id="@+id/activity_billinginfo_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_billinginfo_top_bar"
+        android:background="@drawable/custom_white_bg"
+        >
+
+        <LinearLayout
+            android:id="@+id/activity_billinginfo_linearview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+          
+            <TextView
+                    android:id="@+id/activity_billinginfo_stmt_shoppingcart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#cfcfcf"
+                    android:text="HOW WOULD YOU LIKE TO PAY?"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="6dp"
+                    android:textSize="18sp" />
+
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginBottom="10sp"
+                android:layout_marginRight="5sp" >
+
+                <ImageView
+                    android:id="@+id/activity_billinginfo_icon_creditcard"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/card_ico" />
+                
+                <CheckedTextView
+                    android:id="@+id/activity_billinginfo_checked_creditcard1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13sp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/activity_billinginfo_icon_creditcard"
+                    
+                    android:clickable="true"
+                    android:checkMark="@drawable/custom_radio_button"
+                    android:checked="true"
+                    android:text="Credit Card # 1"
+                    android:textSize="20sp" />
+                
+                
+                
+            </RelativeLayout>
+   
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/filter_bg_separate_line" />
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginBottom="10sp"
+                android:layout_marginRight="5sp" >
+
+                <ImageView
+                    android:id="@+id/activity_billinginfo_icon_paypal"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/paypal_ico" />
+                
+                <CheckedTextView
+                    android:id="@+id/activity_billinginfo_checked_paypal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13sp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/activity_billinginfo_icon_paypal"
+                    
+                    android:clickable="true"
+                    android:checkMark="@drawable/custom_radio_button"
+                    android:checked="true"
+                    android:text="PayPal"
+                    android:textSize="20sp" />
+                
+            </RelativeLayout>
+   
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/filter_bg_separate_line" />
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginBottom="10sp"
+                android:layout_marginRight="5sp" >
+
+                <ImageView
+                    android:id="@+id/activity_billinginfo_icon_interswitch"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/card_ico" />
+                
+                <CheckedTextView
+                    android:id="@+id/activity_billinginfo_checked_interswitch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13sp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/activity_billinginfo_icon_interswitch"
+                    
+                    android:clickable="true"
+                    android:checkMark="@drawable/custom_radio_button"
+                    android:checked="true"
+                    android:text="Interswitch"
+                    android:textSize="20sp" />
+                
+            </RelativeLayout>
+   
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/filter_bg_separate_line" />
+            
+            <ImageView
+		        android:id="@+id/imageView5"
+		        android:layout_width="match_parent"
+		        android:layout_height="30dp"
+		        android:src="@drawable/custom_grey_bg" />
+		            
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginBottom="10sp"
+                android:layout_marginRight="5sp" >
+
+            	<CheckedTextView
+                    android:id="@+id/activity_billinginfo_checked_mybalance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    
+                    android:clickable="true"
+                    android:checkMark="@drawable/custom_radio_button"
+                    android:checked="true"
+                    android:text="My Balance"
+                    android:textSize="20sp" />
+            	
+            	<TextView
+                    android:id="@+id/activity_billinginfo_amount_mybalance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    
+                    android:layout_marginRight="30dp"
+                    
+                    android:text="$ 2.00"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#256793"/>
+                
+            </RelativeLayout>
+            
+            
+            <ImageView
+		        android:id="@+id/imageView5"
+		        android:layout_width="match_parent"
+		        android:layout_height="100dp"
+		        android:src="@drawable/custom_grey_bg" />
+		            
+            
+		</LinearLayout>
+	</ScrollView>
+
+    <Button
+        android:id="@+id/activity_billinginfo_btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_next" />
+    
+</RelativeLayout>

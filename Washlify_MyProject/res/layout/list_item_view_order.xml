@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top"
+    android:background="@drawable/custom_white_bg"
+    android:paddingTop="0dip" >
+
+    <ImageView
+        android:id="@+id/list_item_order_timeicon"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/time_ico" />
+    
+    <RelativeLayout
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/list_item_order_timeicon"
+        android:layout_marginRight="15dp" >
+    
+	    <TextView
+	        android:id="@+id/list_item_order_stmt_orderto"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginTop="5dp"
+	        
+	        android:text="Order To:"
+	        android:textSize="12sp"
+	        android:textColor="@android:color/darker_gray" />
+	
+	    <TextView
+	        android:id="@+id/list_item_order_address"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/list_item_order_stmt_orderto"
+	        
+	        android:layout_marginTop="-4dp"
+	        android:singleLine="true"
+	        android:text="2 South End Ave, New York, NY"
+	        android:textSize="16sp" />
+	    
+	    
+	    <TextView
+	        android:id="@+id/list_item_order_status"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/list_item_order_address"
+	        
+	        android:singleLine="true"
+	        android:text="IN PROGRESS"
+	        android:textSize="16sp"
+	        android:textColor="#256793" />
+	    
+        <TextView
+	        android:id="@+id/list_item_order_stmt_pickup"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/list_item_order_status"
+	        
+	        android:text="Pick Up:"
+	        android:textSize="12sp"
+	        android:textColor="@android:color/darker_gray" />
+        
+        <TextView
+	        android:id="@+id/list_item_order_pickuptime"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/list_item_order_stmt_pickup"
+	        
+	        android:layout_marginTop="-4dp"
+	        android:singleLine="true"
+	        android:text="Friday, 11:00 AM"
+	        android:textSize="16sp" />
+
+        <TextView
+	        android:id="@+id/list_item_order_dropofftime"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/list_item_order_stmt_pickup"
+	        android:layout_alignParentRight="true"
+	        
+	        android:layout_marginTop="-4dp"
+	        android:singleLine="true"
+	        android:text="Sturday, 11:00 PM"
+	        android:textSize="16sp" />
+        
+        <TextView
+	        android:id="@+id/list_item_order_stmt_dropoff"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/list_item_order_status"
+	        android:layout_alignLeft="@id/list_item_order_dropofftime"
+	        
+	        android:text="Drop Off:"
+	        android:textSize="12sp"
+	        android:textColor="@android:color/darker_gray" />
+
+        		
+    </RelativeLayout>
+    
+    
+    <Button
+        android:id="@+id/list_item_order_btn_forward"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/item_arrow"
+        android:layout_marginRight="5dp" />
+    
+</RelativeLayout>

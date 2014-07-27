@@ -1,0 +1,206 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".myaddressesActivity"
+    android:background="@drawable/custom_grey_bg" >
+
+    <RelativeLayout
+	        android:id="@+id/activity_myaddresses_top_bar"
+	        android:layout_width="match_parent"
+	        android:layout_height="45dp"
+	        android:layout_alignParentTop="true"
+	        android:layout_centerHorizontal="true" 
+	        android:background="@drawable/top_bar_bg">
+	
+	        <TextView
+		        android:id="@+id/activity_myaddresses_title"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerInParent="true"
+		        android:text="My Account"
+		        android:textAlignment="center"
+		        android:textColor="#ffffff"
+		        android:textSize="22dp"/>
+		        
+	</RelativeLayout>
+
+	<RelativeLayout
+	    android:id="@+id/id1"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="25dp"
+	    android:layout_marginBottom="10dp"
+	    android:paddingTop="10dp"
+	    android:paddingBottom="10dp"
+	    android:layout_below="@id/activity_myaddresses_top_bar" 
+	    android:background="@drawable/custom_white_bg">
+
+      	<TextView	
+	        android:id="@+id/activity_myaddresses_draghere"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        
+	        android:textColor="@android:color/darker_gray"
+	        android:text="DRAG ADDRESS HERE\nTO USE IT AS DEFAULT"
+	        android:textSize="16sp" />
+                
+	    
+	</RelativeLayout>
+
+    
+    <TextView
+            android:id="@+id/activity_myaccount_stmt_support"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id1"
+            
+            android:background="#cfcfcf"
+            android:text="MY ADDRESSES"
+            android:paddingLeft="10dp"
+            android:paddingTop="14dp"
+            android:paddingBottom="6dp"
+            android:textSize="18sp" />
+            
+            
+   
+    <ListView
+			android:id="@+id/activity_myaddresses_list"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="#ffffff"
+			
+			android:layout_below="@id/activity_myaccount_stmt_support">
+		            
+		        
+	</ListView>
+			
+        
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/activity_myaddresses_list"
+        android:layout_above="@+id/activity_myaddresses_bottom_bar"
+        android:layout_centerHorizontal="true" >
+
+        <Button
+            android:id="@+id/activity_myaddresses_btn_addnew"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_add_new_address" />
+    
+    </RelativeLayout>
+    
+    
+    
+    <RelativeLayout
+        android:id="@+id/activity_myaddresses_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" 
+        android:gravity="center_horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="15dp"
+        android:background="@drawable/custom_light_grey_bg">
+		
+        <ImageView
+			android:id="@+id/temp1"
+			android:layout_width="2dp"
+			android:layout_height="2dp"
+			android:layout_centerInParent="true"
+			android:src="@drawable/custom_grey_bg"/>
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/temp1">
+	        <Button
+	            android:id="@+id/activity_myaddresses_btn_myorders"
+	            style="?android:attr/buttonStyleSmall"
+	            android:layout_height="45dp"
+	            android:layout_width="match_parent"
+	            android:background="@drawable/my_orders"
+	            android:layout_marginLeft="-5dp" 
+	            
+	            android:layout_alignParentLeft="true"
+	            android:layout_toLeftOf="@+id/temp2"
+	            />
+	        
+	        <ImageView
+				android:id="@+id/temp2"
+				android:layout_width="2dp"
+				android:layout_height="2dp"
+				android:layout_centerInParent="true"
+				android:src="@drawable/custom_grey_bg"/>
+        
+	        
+	        <Button
+	            android:id="@+id/activity_myaddresses_btn_mypayments"
+	            style="?android:attr/buttonStyleSmall"
+	            android:layout_height="45dp"
+	            android:layout_width="match_parent"
+	            android:background="@drawable/my_payments"
+	            android:layout_marginLeft="-5dp"
+	            
+	            android:layout_alignParentRight="true"
+	            android:layout_toRightOf="@+id/temp2" />
+	        
+        </RelativeLayout>
+        
+        
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/temp1">
+	        <Button
+	            android:id="@+id/activity_myaddresses_btn_myaddresses"
+	            style="?android:attr/buttonStyleSmall"
+	            android:layout_height="45dp"
+	            android:layout_width="match_parent"
+	            android:background="@drawable/my_addresses_h" 
+	            android:layout_marginLeft="-5dp" 
+	            
+	            android:layout_alignParentLeft="true"
+	            android:layout_toLeftOf="@+id/temp3"/>
+	        
+    	    <ImageView
+				android:id="@+id/temp3"
+				android:layout_width="2dp"
+				android:layout_height="2dp"
+				android:layout_centerInParent="true"
+				android:src="@drawable/custom_grey_bg"/>
+             
+        
+        
+	        <Button
+	            android:id="@+id/activity_myaddresses_btn_myaccount"
+	            style="?android:attr/buttonStyleSmall"
+	            android:layout_height="45dp"
+	            android:layout_width="match_parent"
+	            android:background="@drawable/my_account"
+	            android:layout_marginLeft="-5dp"
+	            
+	            android:layout_alignParentRight="true"
+	            android:layout_toRightOf="@+id/temp3"
+				 />
+	        
+		</RelativeLayout>
+	        
+	        
+    </RelativeLayout>
+
+    
+</RelativeLayout>
+
+
+
+
+

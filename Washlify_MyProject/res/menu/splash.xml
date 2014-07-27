@@ -1,0 +1,100 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_start"
+        android:orderInCategory="100"
+        android:title="0: Start Activity"/>
+    
+    <item
+        android:id="@+id/action_search"
+        android:orderInCategory="100"
+        android:title="1: Search Laundry"/>
+    
+    <item
+        android:id="@+id/action_detail"
+        android:orderInCategory="100"
+        android:title="2: Laundry Detail"/>
+    
+    <item
+        android:id="@+id/action_getclothes"
+        android:orderInCategory="100"
+        android:title="3: Get My Clothes"/>
+    
+    <item
+        android:id="@+id/action_select"
+        android:orderInCategory="100"
+        android:title="4: Select Item"/>
+    
+    <item
+        android:id="@+id/action_select_next"
+        android:orderInCategory="100"
+        android:title="5: Select Item Next"/>
+    
+    <item
+        android:id="@+id/action_filter"
+        android:orderInCategory="100"
+        android:title="6: Search Laundry With Filter"/>
+    
+    <item
+        android:id="@+id/action_cart"
+        android:orderInCategory="100"
+        android:title="7: Cart"/>
+    
+    <item
+        android:id="@+id/action_billing"
+        android:orderInCategory="100"
+        android:title="8: Billing Info"/>
+    
+    <item
+        android:id="@+id/action_orderstatus"
+        android:orderInCategory="100"
+        android:title="9: Order Status"/>
+    
+    <item
+        android:id="@+id/action_placed"
+        android:orderInCategory="100"
+        android:title="10: Order Placed"/>
+    
+    <item
+        android:id="@+id/action_myorders"
+        android:orderInCategory="100"
+        android:title="11: My Orders"/>
+    
+    <item
+        android:id="@+id/action_payments"
+        android:orderInCategory="100"
+        android:title="12: My Payments"/>
+    
+    <item
+        android:id="@+id/action_edit"
+        android:orderInCategory="100"
+        android:title="13: Edit Card"/>
+    
+    <item
+        android:id="@+id/action_load"
+        android:orderInCategory="100"
+        android:title="14: Load Money"/>
+    
+    <item
+        android:id="@+id/action_myaddresses"
+        android:orderInCategory="100"
+        android:title="15: My Addresses"/>
+    
+    <item
+        android:id="@+id/action_myaccount"
+        android:orderInCategory="100"
+        android:title="16: My Account"/>
+    
+    <item
+        android:id="@+id/action_login"
+        android:orderInCategory="100"
+        android:title="17: Login"/>
+    
+    <item
+        android:id="@+id/action_logup"
+        android:orderInCategory="100"
+        android:title="18: Sign Up"/>
+    
+    
+
+</menu>

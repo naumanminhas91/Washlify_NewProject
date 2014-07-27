@@ -1,0 +1,250 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mypaymentsActivity"
+    android:background="@drawable/custom_grey_bg" >
+
+    <RelativeLayout
+	        android:id="@+id/activity_mypayments_top_bar"
+	        android:layout_width="match_parent"
+	        android:layout_height="45dp"
+	        android:layout_alignParentTop="true"
+	        android:layout_centerHorizontal="true" 
+	        android:background="@drawable/top_bar_bg">
+	
+	        <TextView
+		        android:id="@+id/activity_mypayments_title"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerInParent="true"
+		        android:text="My Account"
+		        android:textAlignment="center"
+		        android:textColor="#ffffff"
+		        android:textSize="22dp"/>
+		        
+	</RelativeLayout>
+
+	<RelativeLayout
+	    android:id="@+id/id2"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="25dp"
+	    android:layout_marginBottom="10dp"
+	    android:paddingTop="25dp"
+	    android:paddingBottom="25dp"
+	    android:layout_below="@id/activity_mypayments_top_bar" 
+	    android:background="@drawable/custom_white_bg">
+
+      	<TextView	
+	        android:id="@+id/activity_mypayments_draghere"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        
+	        android:textColor="@android:color/darker_gray"
+	        android:text="DRAG YOUR CARD HERE\nTO USE IT AS DEFAULT"
+	        android:textSize="16sp" />
+                
+	    
+	</RelativeLayout>
+
+    
+    <TextView
+            android:id="@+id/activity_mypayments_stmt_yourcards"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id2"
+            
+            android:background="#cfcfcf"
+            android:text="YOUR CREDIT CARDS"
+            android:paddingLeft="10dp"
+            android:paddingTop="14dp"
+            android:paddingBottom="6dp"
+            android:textSize="18sp" />
+            
+            
+   
+    <ListView
+			android:id="@+id/activity_mypayments_cards_list"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="#ffffff"
+			
+			android:layout_below="@id/activity_mypayments_stmt_yourcards">
+		            
+		        
+	</ListView>
+			
+        
+    <Button
+        android:id="@+id/activity_mypayments_btn_addnew"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/activity_mypayments_cards_list"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_add_credit_card" />
+    
+    
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_mypayments_btn_addnew"
+        android:src="@drawable/filter_bg_separate_line"/>
+        
+    <TextView
+            android:id="@+id/activity_mypayments_stmt_balance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView1"
+            
+            android:background="#cfcfcf"
+            android:text="MY BALANCE"
+            android:paddingLeft="10dp"
+            android:paddingTop="14dp"
+            android:paddingBottom="6dp"
+            android:textSize="18sp" />
+    
+    <RelativeLayout
+	    android:id="@+id/id3"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingTop="10dp"
+	    android:paddingBottom="10dp"
+	    android:paddingLeft="10dp"
+	    android:paddingRight="5dp"
+	    android:layout_below="@id/activity_mypayments_stmt_balance" 
+	    android:background="@drawable/custom_white_bg">
+
+      	<TextView	
+	        android:id="@+id/activity_mypayments_balance_amount"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        
+	        android:text="$ 2.00"
+	        android:textStyle="bold"
+	        android:textSize="22sp" 
+	        android:textColor="#256793"/>
+      
+		  	
+		<Button
+		    android:id="@+id/activity_mypayments_balance_next"
+		    android:layout_width="30dp"
+		    android:layout_height="30dp"
+		    android:layout_alignParentRight="true"
+		    android:layout_centerVertical="true"
+		    android:background="@drawable/item_arrow"/>
+	    
+	</RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/activity_mypayments_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" 
+        android:gravity="center_horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="15dp"
+        android:background="@drawable/custom_light_grey_bg">
+		
+        <ImageView
+			android:id="@+id/temp1"
+			android:layout_width="2dp"
+			android:layout_height="2dp"
+			android:layout_centerInParent="true"
+			android:src="@drawable/custom_grey_bg"/>
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/temp1">
+	        <Button
+	            android:id="@+id/activity_mypayments_btn_myorders"
+	            style="?android:attr/buttonStyleSmall"
+	            android:layout_height="45dp"
+	            android:layout_width="match_parent"
+	            android:background="@drawable/my_orders"
+	            android:layout_marginLeft="-5dp" 
+	            
+	            android:layout_alignParentLeft="true"
+	            android:layout_toLeftOf="@+id/temp2"
+	            />
+	        
+	        <ImageView
+				android:id="@+id/temp2"
+				android:layout_width="2dp"
+				android:layout_height="2dp"
+				android:layout_centerInParent="true"
+				android:src="@drawable/custom_grey_bg"/>
+        
+	        
+	        <Button
+	            android:id="@+id/activity_mypayments_btn_mypayments"
+	            style="?android:attr/buttonStyleSmall"
+	            android:layout_height="45dp"
+	            android:layout_width="match_parent"
+	            android:background="@drawable/my_payments_h"
+	            android:layout_marginLeft="-5dp"
+	            
+	            android:layout_alignParentRight="true"
+	            android:layout_toRightOf="@+id/temp2" />
+	        
+        </RelativeLayout>
+        
+        
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/temp1">
+	        <Button
+	            android:id="@+id/activity_mypayments_btn_myaddresses"
+	            style="?android:attr/buttonStyleSmall"
+	            android:layout_height="45dp"
+	            android:layout_width="match_parent"
+	            android:background="@drawable/my_addresses" 
+	            android:layout_marginLeft="-5dp" 
+	            
+	            android:layout_alignParentLeft="true"
+	            android:layout_toLeftOf="@+id/temp3"/>
+	        
+    	    <ImageView
+				android:id="@+id/temp3"
+				android:layout_width="2dp"
+				android:layout_height="2dp"
+				android:layout_centerInParent="true"
+				android:src="@drawable/custom_grey_bg"/>
+             
+        
+        
+	        <Button
+	            android:id="@+id/activity_mypayments_btn_myaccount"
+	            style="?android:attr/buttonStyleSmall"
+	            android:layout_height="45dp"
+	            android:layout_width="match_parent"
+	            android:background="@drawable/my_account"
+	            android:layout_marginLeft="-5dp"
+	            
+	            android:layout_alignParentRight="true"
+	            android:layout_toRightOf="@+id/temp3"
+				 />
+	        
+		</RelativeLayout>
+	        
+	        
+    </RelativeLayout>
+
+    
+</RelativeLayout>
+
+
+
+
+

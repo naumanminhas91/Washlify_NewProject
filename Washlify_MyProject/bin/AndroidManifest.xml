@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mycompany.washlify"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.mycompany.washlify.SplashActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mycompany.washlify.StartActivity"
+            android:label="@string/title_activity_start" >
+        </activity>
+        <activity
+            android:name="com.mycompany.washlify.LoginActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name="com.mycompany.washlify.SignUpActivity"
+            android:label="@string/title_activity_sign_up" >
+        </activity>
+        <activity
+            android:name="com.mycompany.washlify.SearchLaundryActivity"
+            android:label="@string/title_activity_search_laundry" >
+        </activity>
+        <activity
+            android:name="com.mycompany.washlify.LaundryDetailActivity"
+            android:label="@string/title_activity_laundry_detail" >
+        </activity>
+        <activity
+            android:name="com.mycompany.washlify.GetMyClothesActivity"
+            android:label="@string/title_activity_get_my_clothes" >
+        </activity>
+        <activity
+            android:name="com.mycompany.washlify.SelectItemsActivity"
+            android:label="@string/title_activity_select_items" >
+        </activity>
+        <activity
+            android:name="com.mycompany.washlify.SelectItemsNextActivity"
+            android:label="@string/title_activity_select_items_next" >
+        </activity>
+        <activity
+            android:name="com.mycompany.washlify.CartActivity"
+            android:label="@string/title_activity_cart" >
+        </activity>
+        <activity
+            android:name="com.mycompany.washlify.BillingInfoActivity"
+            android:label="@string/title_activity_billing_info" >
+        </activity>
+        <activity
+            android:name="com.mycompany.washlify.OrderPlacedActivity"
+            android:label="@string/title_activity_order_placed" >
+        </activity>
+        <activity
+            android:name="com.mycompany.washlify.OrderStatusActivity"
+            android:label="@string/title_activity_order_status" >
+        </activity>
+        <activity
+            android:name="com.mycompany.washlify.MyOrdersActivity"
+            android:label="@string/title_activity_my_orders" >
+        </activity>
+        <activity
+            android:name="com.mycompany.washlify.MyAccountActivity"
+            android:label="@string/title_activity_my_account" >
+        </activity>
+        <activity
+            android:name="com.mycompany.washlify.MyAddressesActivity"
+            android:label="@string/title_activity_my_addresses" >
+        </activity>
+        <activity
+            android:name="com.mycompany.washlify.MyPaymentsActivity"
+            android:label="@string/title_activity_my_payments" >
+        </activity>
+        <activity
+            android:name="com.mycompany.washlify.EditCardActivity"
+            android:label="@string/title_activity_edit_card" >
+        </activity>
+        <activity
+            android:name="com.mycompany.washlify.LoadMoneyActivity"
+            android:label="@string/title_activity_load_money" >
+        </activity>
+    </application>
+
+</manifest>

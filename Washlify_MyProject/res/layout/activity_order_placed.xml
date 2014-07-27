@@ -1,0 +1,200 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderPlacedActivity" >
+    
+    <RelativeLayout
+	        android:id="@+id/activity_orderplaced_top_bar"
+	        android:layout_width="match_parent"
+	        android:layout_height="45dp"
+	        android:layout_alignParentTop="true"
+	        android:layout_centerHorizontal="true" 
+	        android:background="@drawable/top_bar_bg">
+	
+	        <Button
+	            android:id="@+id/activity_orderplaced_btn_done"
+	            style="?android:attr/buttonStyleSmall"
+	            android:layout_width="30dp"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:layout_centerVertical="true"
+	            android:layout_margin="7dp"
+	            android:background="@drawable/filter_check_ico" />
+	
+	        <TextView
+		        android:id="@+id/activity_orderplaced_title"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerInParent="true"
+		        android:text="Congrats"
+		        android:textAlignment="center"
+		        android:textColor="#ffffff"
+		        android:textSize="22dp"/>
+	        	        
+	</RelativeLayout>
+
+    <RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_below="@+id/activity_orderplaced_top_bar"
+	        	        android:background="@drawable/custom_light_grey_bg">
+	    
+    <ScrollView
+        android:id="@+id/activity_orderplaced_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+	    <RelativeLayout
+	        android:id="@+id/activity_orderplaced_container"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_below="@id/activity_orderplaced_top_bar" >
+	
+	        <TextView
+	            android:id="@+id/activity_orderplaced_stmt_placed"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentTop="true"
+	            android:layout_centerHorizontal="true"
+	            android:layout_marginTop="10dp"
+	            android:layout_marginBottom="10dp"
+	            android:text="Your order has been placed!"
+	            android:textSize="20sp"
+	            android:textStyle="bold"
+	            android:textColor="#5FC7E0" />
+	        
+		    <RelativeLayout
+		        android:id="@+id/activity_orderplaced_container_ordernumber"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@id/activity_orderplaced_stmt_placed"
+		        android:background="@drawable/custom_white_bg" >
+		
+		        <TextView
+		            android:id="@+id/activity_orderplaced_stmt_ordernumber"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentTop="true"
+		            android:layout_centerHorizontal="true"
+		            android:layout_marginTop="15dp"
+		            android:text="Your Order Number is"
+		            android:textSize="20sp"/>
+		        	     
+		        <TextView
+		            android:id="@+id/activity_orderplaced_ordernumber"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_below="@id/activity_orderplaced_stmt_ordernumber"
+		            android:layout_marginBottom="10dp"
+		            android:layout_centerHorizontal="true"
+		            android:text="7382"
+		            android:textSize="30sp"
+		            android:textStyle="bold"
+					android:textColor="#5FC7E0"/>
+		        	           
+		                
+	        </RelativeLayout>
+	        
+	        <TextView
+	            android:id="@+id/activity_orderplaced_stmt_pickuptime"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@+id/activity_orderplaced_container_ordernumber"
+	            android:layout_centerHorizontal="true"
+	            android:layout_marginTop="15dp"
+	            android:text="Pick Up Time:"
+	            android:textSize="16sp"
+	            android:textColor="@android:color/darker_gray"/>
+	        
+			<TextView
+	            android:id="@+id/activity_orderplaced_pickuptime"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@+id/activity_orderplaced_stmt_pickuptime"
+	            android:layout_centerHorizontal="true"
+	            android:text="Friday, 11:00 AM"
+	            android:textSize="25sp"
+	            android:textColor="#ff0000"/>
+	                
+	    
+			<TextView
+	            android:id="@+id/activity_orderplaced_stmt_deliverytime"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@+id/activity_orderplaced_pickuptime"
+	            android:layout_centerHorizontal="true"
+	            android:layout_marginTop="15dp"
+	            android:text="Delivery Time:"
+	            android:textSize="16sp"
+	            android:textColor="@android:color/darker_gray"/>
+	        
+			<TextView
+	            android:id="@+id/activity_orderplaced_deliverytime"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@+id/activity_orderplaced_stmt_deliverytime"
+	            android:layout_centerHorizontal="true"
+	            android:text="Saturday, 11:00 PM"
+	            android:textSize="25sp"
+	            android:textColor="#256793"/>
+			
+			<TextView
+	            android:id="@+id/activity_orderplaced_stmt_address"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@+id/activity_orderplaced_deliverytime"
+	            android:layout_centerHorizontal="true"
+	            android:layout_marginTop="15dp"
+	            android:text="Address:"
+	            android:textSize="16sp"
+	            android:textColor="@android:color/darker_gray"/>
+	        
+			<TextView
+	            android:id="@+id/activity_orderplaced_address"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@+id/activity_orderplaced_stmt_address"
+	            android:layout_centerHorizontal="true"
+	            android:layout_marginLeft="5dp"
+	            android:layout_marginRight="5dp"
+	            android:text="2 South End Ave, New York, NY"
+	            android:singleLine="true"
+	            android:textSize="20sp"
+	            android:textColor="#004400"/>
+			
+	        
+			
+			<Button
+		        android:id="@+id/activity_orderplaced_share_fb"
+		        style="?android:attr/buttonStyleSmall"
+		        android:layout_height="45sp"
+		        android:layout_width="match_parent"
+		        android:layout_below="@id/activity_orderplaced_address"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"
+		        android:layout_marginTop="30dp"
+		        android:background="@drawable/btn_fb"/>
+			
+			
+			<Button
+		        android:id="@+id/activity_orderplaced_share_twitter"
+		        style="?android:attr/buttonStyleSmall"
+		        android:layout_height="45sp"
+		        android:layout_width="match_parent"
+		        android:layout_below="@id/activity_orderplaced_share_fb"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"
+		        android:layout_marginTop="15dp"
+		        android:background="@drawable/btn_tw"/>		
+			
+			
+			
+		</RelativeLayout>
+    </ScrollView>
+
+    
+
+    </RelativeLayout>
+    
+</RelativeLayout>

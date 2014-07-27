@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_start_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/start_bg"
+    tools:context=".StartActivity" >
+
+    <ImageView
+        android:id="@+id/activity_start_logo"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginTop="15dp"
+        android:scaleType="fitCenter"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/start_logo" />
+    
+    <TextView
+        android:id="@+id/activity_start_statement1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_start_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/activity_start_statement1"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textStyle="italic" />
+    
+    <EditText
+        android:id="@+id/activity_start_addressField"
+        android:layout_height="55sp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/activity_start_statement1"
+        android:layout_marginTop="11dp"
+        android:alpha="1"
+        android:background="@drawable/start_textfield"
+        android:drawableLeft="@drawable/start_map_logo"
+        android:ems="10"
+        android:hint="@string/activity_start_hint_address"
+        android:textColor="#ffffff" >
+
+        <requestFocus />
+    </EditText>
+    
+    <Button
+        android:id="@+id/activity_start_goBtn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="55sp"
+        android:layout_height="55sp"
+        android:layout_alignRight="@id/activity_start_addressField"
+        android:layout_marginLeft="2dp"
+        android:layout_alignTop="@id/activity_start_addressField"
+        android:layout_alignBottom="@id/activity_start_addressField"
+        android:background="@drawable/start_btn_go"/>
+
+    <ImageView
+        android:id="@+id/activity_start_seperator"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_start_addressField"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/start_separate" />
+
+    <RelativeLayout
+        android:id="@+id/activity_start_statement2"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/activity_start_seperator"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+        
+        <TextView
+	        android:id="@+id/activity_start_statement2_1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:text="or" 
+	        android:textColor="#ffffff"
+	        android:textSize="20sp" />
+
+	     <TextView
+	         android:id="@+id/activity_start_statement2_login"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_marginLeft="8dp"
+	         android:layout_marginRight="8dp"
+	         android:layout_toRightOf="@id/activity_start_statement2_1"
+	         android:layout_alignBottom="@id/activity_start_statement2_1"
+	         android:text="Login"
+	         android:textStyle="bold"
+	         android:textColor="#5FC7E0"
+	         android:textSize="20sp"/>
+
+	      <TextView
+	          android:id="@+id/activity_start_statement2_3"
+	          android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:layout_alignBottom="@id/activity_start_statement2_1"
+	          android:layout_toRightOf="@id/activity_start_statement2_login"
+	          android:text="to use your address"
+	          android:textColor="#ffffff"
+	          android:textSize="20sp" />
+        
+        
+    </RelativeLayout>
+    
+    
+</RelativeLayout>

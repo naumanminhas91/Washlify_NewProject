@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top"
+    android:background="@drawable/custom_white_bg"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="5dp" >
+
+    <ImageView
+        android:id="@+id/list_item_card_cardicon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/card_ico"
+        android:layout_marginRight="10dp" />
+    
+    <TextView
+        android:id="@+id/list_item_card_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/list_item_card_cardicon"
+        
+        android:singleLine="true"
+        android:text="VISA GOLD"
+        android:textSize="20sp"
+        android:textColor="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/list_item_card_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/list_item_card_title"
+        android:layout_toRightOf="@id/list_item_card_cardicon"
+    
+    	android:layout_marginTop="3dp"
+    	android:layout_marginBottom="1dp"
+        
+        android:singleLine="true"
+        android:text="**** **** **** 1254"
+        android:textSize="15sp" />
+    
+    <TextView
+        android:id="@+id/list_item_card_ratio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/list_item_card_number"
+        android:layout_toRightOf="@id/list_item_card_cardicon"
+        
+        android:singleLine="true"
+        android:text="3/18"
+        android:textSize="15sp" />
+    
+    
+    <Button
+        android:id="@+id/list_item_card_btn_delete"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/delete_ico" />
+   
+    
+   <Button
+        android:id="@+id/list_item_card_btn_edit"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_toLeftOf="@id/list_item_card_btn_delete"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="13dp"
+        android:layout_marginLeft="13dp"
+        android:background="@drawable/edit_ico" />
+    
+</RelativeLayout>

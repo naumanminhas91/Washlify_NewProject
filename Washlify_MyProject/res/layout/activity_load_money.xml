@@ -1,0 +1,375 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditCardActivity" 
+    android:background="@drawable/custom_grey_bg">
+
+    <RelativeLayout
+	        android:id="@+id/activity_loadmoney_top_bar"
+	        android:layout_width="match_parent"
+	        android:layout_height="45dp"
+	        android:layout_alignParentTop="true"
+	        android:layout_centerHorizontal="true" 
+	        android:background="@drawable/top_bar_bg">
+	
+	        <Button
+	            android:id="@+id/activity_loadmoney_btn_back"
+	            style="?android:attr/buttonStyleSmall"
+	            android:layout_width="30dp"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentLeft="true"
+	            android:layout_centerVertical="true"
+	            android:layout_margin="7dp"
+	            android:background="@drawable/arrow_back" />
+	
+	        <TextView
+		        android:id="@+id/activity_loadmoney_title"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerInParent="true"
+		        android:text="Load Money"
+		        android:textAlignment="center"
+		        android:textColor="#ffffff"
+		        android:textSize="22dp"/>
+		        
+	</RelativeLayout>
+	
+    <ScrollView
+        android:id="@+id/activity_loadmoney_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_loadmoney_top_bar"
+        android:background="@drawable/custom_white_bg"
+        >
+
+        <LinearLayout
+            android:id="@+id/activity_loadmoney_linearview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            
+            <TextView
+                    android:id="@+id/activity_loadmoney_stmt_mybalance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#cfcfcf"
+                    android:text="MY BALANCE"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="14dp"
+                    android:paddingBottom="6dp"
+                    android:textSize="18sp" />
+            
+            
+	      	<TextView	
+		        android:id="@+id/activity_mypayments_mybalance_amount"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginTop="10dp"
+		        android:layout_marginBottom="10dp"
+		        
+		        android:text="$ 2.00"
+		        android:textStyle="bold"
+		        android:textSize="22sp" 
+		        android:textColor="#256793"/>
+          
+            <TextView
+                    android:id="@+id/activity_loadmoney_stmt_carddetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#cfcfcf"
+                    android:text="HOW QOULD YOU LIKE TO LOAD?"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="6dp"
+                    android:textSize="18sp" />
+
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginBottom="10sp"
+                android:layout_marginRight="5sp" >
+
+                <ImageView
+                    android:id="@+id/activity_loadmoney_icon_creditcard"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/card_ico" />
+                
+                <CheckedTextView
+                    android:id="@+id/activity_loadmoney_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13sp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/activity_loadmoney_icon_creditcard"
+                    
+                    android:text="Credit Card # 1"
+                    android:textSize="20sp"
+                    
+                    android:clickable="true"
+                    android:checkMark="@drawable/custom_radio_button"
+                    android:checked="true"/>
+                
+                
+            </RelativeLayout>
+   
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/filter_bg_separate_line" />
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginBottom="10sp"
+                android:layout_marginRight="5sp" >
+
+                
+                <TextView
+                    android:id="@+id/activity_loadmoney_stmt_cardnumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13sp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    
+                    android:text="Card Number"
+                    android:textSize="16sp" />
+                
+                
+                <EditText
+                    android:id="@+id/activity_loadmoney_cardnumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    
+                    android:hint="**** **** **** ****"
+                    android:textSize="16sp" />
+                
+            </RelativeLayout>
+   
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/filter_bg_separate_line" />
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginBottom="10sp"
+                android:layout_marginRight="5sp" >
+
+                
+                <TextView
+                    android:id="@+id/activity_loadmoney_stmt_expiration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13sp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    
+                    android:text="Expiration"
+                    android:textSize="16sp" />
+                
+                
+                <EditText
+                    android:id="@+id/activity_loadmoney_expiration_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    
+                    android:hint="MM/YY"
+                    android:textSize="16sp" />
+                
+            </RelativeLayout>
+            
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/filter_bg_separate_line" />
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginBottom="10sp"
+                android:layout_marginRight="5sp" >
+
+                
+                <TextView
+                    android:id="@+id/activity_loadmoney_stmt_ecuritycode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13sp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    
+                    android:text="Security Code"
+                    android:textSize="16sp" />
+                
+                
+                <EditText
+                    android:id="@+id/activity_loadmoney_security_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    
+                    android:hint="****"
+                    android:textSize="16sp" />
+                
+            </RelativeLayout>
+            
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/filter_bg_separate_line" />
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginBottom="10sp"
+                android:layout_marginRight="5sp" >
+
+                
+                <TextView
+                    android:id="@+id/activity_loadmoney_stmt_zipcode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13sp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    
+                    android:text="Billing Zip/Postal Code"
+                    android:textSize="16sp" />
+                
+                
+                <EditText
+                    android:id="@+id/activity_loadmoney_zipcode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    
+                    android:hint="Enter Code"
+                    android:textSize="16sp" />
+                
+            </RelativeLayout>
+            
+            
+            <ImageView
+		        android:id="@+id/imageView5"
+		        android:layout_width="match_parent"
+		        android:layout_height="30dp"
+		        android:src="@drawable/custom_grey_bg" />
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginBottom="10sp"
+                android:layout_marginRight="5sp" >
+
+                <ImageView
+                    android:id="@+id/activity_loadmoney_icon_paypal"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/paypal_ico" />
+                
+                <CheckedTextView
+                    android:id="@+id/activity_loadmoney_checked_paypal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13sp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/activity_loadmoney_icon_paypal"
+                    
+                    android:clickable="true"
+                    android:checkMark="@drawable/custom_radio_button"
+                    android:checked="true"
+                    android:text="PayPal"
+                    android:textSize="20sp" />
+                
+            </RelativeLayout>
+            
+		</LinearLayout>
+	</ScrollView>
+
+	<LinearLayout
+        android:id="@+id/activity_loadmoney_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" 
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="15dp"
+        android:background="@drawable/custom_light_grey_bg">
+		
+        <Button
+            android:id="@+id/activity_loadmoney_btn_myorders"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_height="45dp"
+            android:layout_width="100dp"
+            android:background="@drawable/my_orders"
+            android:layout_marginLeft="-5dp" />
+        
+        <Button
+            android:id="@+id/activity_loadmoney_btn_mypayments"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_height="45dp"
+            android:layout_width="100dp"
+            android:background="@drawable/my_payments_h"
+            android:layout_marginLeft="-5dp" />
+        
+        <Button
+            android:id="@+id/activity_loadmoney_btn_myaddresses"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_height="45dp"
+            android:layout_width="100dp"
+            android:background="@drawable/my_addresses" 
+            android:layout_marginLeft="-5dp" />
+        
+        <Button
+            android:id="@+id/activity_loadmoney_btn_myaccount"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_height="45dp"
+            android:layout_width="100dp"
+            android:background="@drawable/my_account"
+            android:layout_marginLeft="-5dp" /> 
+        
+        
+    </LinearLayout>
+    
+    
+</RelativeLayout>

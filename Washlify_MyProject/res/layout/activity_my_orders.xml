@@ -1,0 +1,192 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyOrdersActivity" 
+    android:background="@drawable/custom_grey_bg">
+    
+    <RelativeLayout
+        android:id="@+id/activity_myorders_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/top_bar_bg" >
+
+        <Button
+            android:id="@+id/activity_myorders_btn_back"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="7dp"
+            android:background="@drawable/arrow_back" />
+
+        <TextView
+            android:id="@+id/activity_myorders_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="My Orders"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="22dp" />
+
+        <Button
+            android:id="@+id/activity_myorders_btn_addmore"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="7dp"
+            android:background="@drawable/add_ico" />
+    </RelativeLayout>
+
+    
+    <RelativeLayout
+        android:id="@+id/activity_myorders_tabbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_myorders_top_bar"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:gravity="center"
+        android:background="@drawable/custom_white_bg" >
+
+        <Button
+            android:id="@+id/activity_myorders_btn_inprogress"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			
+            android:background="@drawable/my_orders_inprogress_h" />
+
+        <Button
+            android:id="@+id/activity_myorders_btn_finishd"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/activity_myorders_btn_inprogress"
+            android:background="@drawable/my_orders_finished" />
+    </RelativeLayout>
+
+    <ImageView
+		android:id="@+id/activity_myorders_seperator_1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/activity_myorders_tabbar"
+		android:src="@drawable/filter_bg_separate_line"/>
+
+    <ListView
+		android:id="@+id/activity_myorders_list"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:background="#ffffff"
+		android:layout_below="@id/activity_myorders_seperator_1"
+		android:paddingBottom="5dp">
+	            
+		        
+	</ListView>
+	
+    <RelativeLayout
+        android:id="@+id/activity_myorders_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" 
+        android:gravity="center_horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="15dp"
+        android:background="@drawable/custom_light_grey_bg">
+		
+        <ImageView
+			android:id="@+id/temp1"
+			android:layout_width="2dp"
+			android:layout_height="2dp"
+			android:layout_centerInParent="true"
+			android:src="@drawable/custom_grey_bg"/>
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/temp1">
+	        <Button
+	            android:id="@+id/activity_myorders_btn_myorders"
+	            style="?android:attr/buttonStyleSmall"
+	            android:layout_height="45dp"
+	            android:layout_width="match_parent"
+	            android:background="@drawable/my_orders_h"
+	            android:layout_marginLeft="-5dp" 
+	            
+	            android:layout_alignParentLeft="true"
+	            android:layout_toLeftOf="@+id/temp2"
+	            />
+	        
+	        <ImageView
+				android:id="@+id/temp2"
+				android:layout_width="2dp"
+				android:layout_height="2dp"
+				android:layout_centerInParent="true"
+				android:src="@drawable/custom_grey_bg"/>
+        
+	        
+	        <Button
+	            android:id="@+id/activity_myorders_btn_mypayments"
+	            style="?android:attr/buttonStyleSmall"
+	            android:layout_height="45dp"
+	            android:layout_width="match_parent"
+	            android:background="@drawable/my_payments"
+	            android:layout_marginLeft="-5dp"
+	            
+	            android:layout_alignParentRight="true"
+	            android:layout_toRightOf="@+id/temp2" />
+	        
+        </RelativeLayout>
+        
+        
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/temp1">
+	        <Button
+	            android:id="@+id/activity_myorders_btn_myaddresses"
+	            style="?android:attr/buttonStyleSmall"
+	            android:layout_height="45dp"
+	            android:layout_width="match_parent"
+	            android:background="@drawable/my_addresses" 
+	            android:layout_marginLeft="-5dp" 
+	            
+	            android:layout_alignParentLeft="true"
+	            android:layout_toLeftOf="@+id/temp3"/>
+	        
+    	    <ImageView
+				android:id="@+id/temp3"
+				android:layout_width="2dp"
+				android:layout_height="2dp"
+				android:layout_centerInParent="true"
+				android:src="@drawable/custom_grey_bg"/>
+             
+        
+        
+	        <Button
+	            android:id="@+id/activity_myorders_btn_myaccount"
+	            style="?android:attr/buttonStyleSmall"
+	            android:layout_height="45dp"
+	            android:layout_width="match_parent"
+	            android:background="@drawable/my_account"
+	            android:layout_marginLeft="-5dp"
+	            
+	            android:layout_alignParentRight="true"
+	            android:layout_toRightOf="@+id/temp3"
+				 />
+	        
+		</RelativeLayout>
+	        
+	        
+    </RelativeLayout>
+    
+    
+</RelativeLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/custom_settings_container"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:orientation="vertical" 
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:background="@drawable/filter_bg">
+    
+
+    <RelativeLayout
+        android:id="@+id/custom_settings_row1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/custom_settings_row1_stmt"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:text="Tailoring"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/custom_settings_row1_check"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/filter_check_ico"
+            android:visibility="visible" />
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/custom_settings_row2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/custom_settings_row2_stmt"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:text="Dry Cleaning"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/custom_settings_row2_check"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/filter_check_ico"
+            android:visibility="visible" />
+        
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/custom_settings_row3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/custom_settings_row3_stmt"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:text="Wash'n Fold"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/custom_settings_row3_check"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/filter_check_ico"
+            android:visibility="visible" />
+        
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/custom_settings_row4_stmt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="10dp"
+        android:gravity="bottom"
+        android:text="Specials" 
+        android:textSize="16sp"/>
+
+    <ImageView
+        android:id="@+id/custom_settings_row5_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/filter_bg_separate_line" />
+    
+    <RelativeLayout
+        android:id="@+id/custom_settings_row3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/custom_settings_row6_stmt"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:text="PICKUP TIME"
+            android:textSize="14sp"
+            android:textColor="@android:color/white" />
+
+        <DigitalClock
+            android:id="@+id/custom_settings_row6_clock_max"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="DigitalClock" />
+
+        <TextView
+            android:id="@+id/custom_settings_row6_clock_dash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/custom_settings_row6_clock_max" 
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="-" />
+
+        <DigitalClock
+            android:id="@+id/custom_settings_row6_clock_min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/custom_settings_row6_clock_dash"
+            android:text="DigitalClock" />
+        
+    </RelativeLayout>
+    
+</LinearLayout>
+
+
+
+
+
